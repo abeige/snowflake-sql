@@ -1,0 +1,23 @@
+{
+    "editor.tokenColorCustomizations": {
+        "comments": "#B0C4CE",
+        "textMateRules": [
+            {
+                "scope": "keyword.other",
+                "settings": {
+                    "foreground": "#39ADB5",
+                    "fontStyle": "bold"
+                }
+            },
+            {
+                "scope": "keyword.codetag.notation",
+                "settings": {
+                    "fontStyle": "bold"
+                }
+            },
+        ]
+    },
+    "[snowflake-sql]": {
+        "editor.semanticHighlighting.enabled": false
+    }
+}
