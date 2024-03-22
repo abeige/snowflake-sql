@@ -633,7 +633,7 @@
 		"match": "(?:\\b(NOTE|XXX|HACK|FIXME|BUG|TODO)\\b)",
 		"captures": {
 		  "1": {
-			"name": "keyword.codetag.notation"
+			"name": "keyword.codetag.notation.sql"
 		  }
 		}
 	  }
