@@ -435,7 +435,7 @@
         },
         {
           "name": "keyword.control.snowsql.primary",
-          "match": "\\b(?i:alter|begin|call|commit|copy\\s+into|create\\s+or\\s+replace|create|delete|desc|describe|drop|explain|get|grant|insert|list|merge\\s+into|put|remove|revoke|rm|rollback|select|set|show\\s+terse|show|start|truncate|undrop|unset|update|use)\\b",
+          "match": "\\b(?i:alter|begin|call|commit|copy\\s+into|create\\s+or\\s+replace|create|delete|desc|describe|drop|explain|get|grant|insert|list|merge\\s+into|put|remove|revoke|rm|rollback|select|set|show\\s+terse|show|start|truncate|undrop|unset|update|use|with)\\b",
           "comment": "most primary commands"
         },
         {
@@ -450,7 +450,7 @@
         },
         {
           "name": "variable.parameter.snowsql",
-          "match": "\\b(?i:all|allowed_ip_list|auto_ingest|auto_refresh|blocked_ip_list|body|clustering\\s+key|comment|compression|constraint|copy_options|credentials|directory|enabled|enable|encryption|file_format|files|format_name|immutable|location|pattern|(primary|foreign)\\s+key|primary|privileges|recluster|recursive|secure|type|unique|volatile|with\\s+location|with)\\b",
+          "match": "\\b(?i:all|allowed_ip_list|auto_ingest|auto_refresh|blocked_ip_list|body|clustering\\s+key|comment|compression|constraint|copy_options|credentials|directory|enabled|enable|encryption|file_format|files|format_name|immutable|location|pattern|(primary|foreign)\\s+key|primary|privileges|recluster|recursive|secure|type|unique|volatile|with\\s+location)\\b",
           "comment": "many many parameters"
         },
         {
