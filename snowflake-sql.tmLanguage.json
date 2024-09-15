@@ -472,7 +472,7 @@
           "match": "\\s+(\\$\\w+)\\s+"
         },
         {
-          "match": "(\\w+)\\(",
+          "match": "(\\w+)(?=\\()",
           "captures": {
             "1": {
               "name": "entity.name.function.snowsql"
@@ -496,11 +496,11 @@
         },
         {
           "name": "keyword.operator.snowsql",
-          "match": "(?:~|!|<|>)?=|<|>|::"
+          "match": "(?:~|!|<|>)?=|<|>"
         },
         {
-          "name": "keyword.operator.star.snowsql",
-          "match": "\\*"
+          "name": "punctuation.snowsql",
+          "match": "\\(|\\)|,|::"
         }
       ]
     },
