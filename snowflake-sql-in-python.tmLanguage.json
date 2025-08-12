@@ -1,0 +1,23 @@
+{
+  "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+  "fileTypes": ["py"],
+  "injectionSelector": "L:string.quoted.multi.python, L:string.quoted.single.python, L:meta.fstring.python - (comment.line.number-sign.python, punctuation.definition.comment.python)",
+  "patterns": [
+    {
+      "name": "meta.embedded.sql.snowflake",
+      "begin": "(?<!--.*)^\\s*(CREATE\\s+(OR\\s+REPLACE\\s+)?TABLE|SELECT|USE|DROP)\\b",
+      "end": "(?=\"\"\"|''')",
+      "beginCaptures": {
+        "0": {
+          "name": "keyword.control.snowsql.primary"
+        }
+      },
+      "patterns": [
+        {
+          "include": "source.sql.snowflake"
+        }
+      ]
+    }
+  ],
+  "scopeName": "snowflake-sql-in-python.injection"
+}
